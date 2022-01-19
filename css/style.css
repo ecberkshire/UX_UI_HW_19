@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 5px 0;
+  margin: 0;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #0A574A;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  
+}
+ 
+.nav li:hover {
+  background-color:#1CAE94;
+  cursor: pointer;
+}
+ 
+.nav li.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+/* Modal stuff */
+#modalBtn {
+  display: block;
+  color: white;
+  background-color: #1CAE94;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 85px;
+  font-size: 18px;
+  cursor: pointer;
+  font: 'Open Sans';
+  margin: 0 auto;
+}
+
+
+#modalBtn:hover {
+  background-color: #005f5f;
+  cursor: pointer;
+}
+
+legend {
+  font-size: 28px;
+  font-style: 'Oswald', sans;
+}
+
+label {
+  font-size: 18px;
+  font-style: 'Oswald';
+}
+
+form {
+  background-color: #0A574A;
+  color: white;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+}
+
+.heroimg {
+  display: flex;
+  height: stretch;
+  justify-content: flex-start;
+  padding: 25px;
+  align-items: center;
+  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+  flex-shrink: 1;
+
+}
+.content {
+  display: flex;
+  align-items:flex-start;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Oswald', sans-serif;
+}
+p {
+  text-align: center;
+  font-size: 28px;
+}
+
+.aboutMe p {
+  display: flex;
+  flex-wrap: wrap;
+ 
+} 
+
+
+/* my skills css using grid */
+
+
+
+
+.mySkills {
+  display: grid;
+  grid-template-areas:
+    "mySkills1 mySkills2 mySkills3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border: 5px solid #0A574A;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+ 
+  gap: 1.5rem;
+  padding: 50px;
+}
+@media screen and (max-width: 600px) {
+  .mySkills {
+    grid-template-areas:
+    'mySkills1'
+    'mySkills2'
+    'mySkills3';
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.h2skills {
+  display: flex;
+  font-family: 'Open Sans';
+  font-size: 48px;
+  color: white;
+  background-color: #0A574A;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 100%;
+  padding: 30px;
+  }
+
+.mySkills1 {
+  grid-area: mySkills1;
+  color: white;
+  background-color: #1CAE94;
+  gap: 1.5rem;
+  margin: 20px;
+  
+  
+}
+
+.mySkills2 {
+  grid-area: mySkills2;
+  color: white;
+  background-color: #1CAE94;
+  margin: 20px;
+  gap: 1.5rem;
+}
+
+.mySkills3 {
+  grid-area: mySkills3;
+   color: white;
+  background-color: #1CAE94;
+  margin: 20px;
+  gap: 1.5rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 38px;
+  padding: 50px;
+}
+
+ul {
+  margin: 100px;
+}
+li {
+  font-family: 'Arial';
+  font-size: 28px;
+  padding: 5px;
+}
+
+
+/* my work section using flexbox */
+
+.myWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(92, 104, 113, 1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 50px;
+}
+.myWorkH3 {
+  
+  text-align: center;
+  font-style: bold;
+  
+}
+
+
+.myWorkp {
+ text-align: center;
+  flex-wrap: wrap;
+  font-size: 28px;
+  font-family: 'Arial';
+  padding: 20px;
+ 
+ }
+.myButton {
+  display: block;
+  color: white;
+  background-color: #1CAE94;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 85px;
+  font-size: 18px;
+  cursor: pointer;
+  font: 'Open Sans';
+  margin: 0 auto;
+  
+}
+
+.myButton:hover {
+  background-color: #005f5f;
+  cursor: pointer;
+}
+
+.myWorkpanicCord {
+  display: flex;
+  border: 5px solid rgba(92, 104, 113, 1);
+  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 50px;
+  width: 94%;
+}
+
+
+.flexItemleft {
+  margin: 50px;
+}
+
+.flexItemright {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.h2footer {
+  display: flex;
+  font-family: 'Open Sans';
+  font-size: 48px;
+  color: white;
+  background-color: #0A574A;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 100%;
+  padding: 30px;
+  }
+
+footer {
+  border: 5px solid #0A574A;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerCard {
+    border-right: 0px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+ 
+}
+
+
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  margin: 0 50px;
+  
+  
+}
+
+img {
+  margin: 5px;
+}
+
+.footerCard {
+  display: flex;
+  flex-direction: column;
+  border-right: 5px solid #0A574A ;
+  margin: 50px;
+  width: 35%;
+  font-family: 'Arial';
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 15%;
+  font-family: 'Open Sans';
+  font-size: 48px;
+  color:#0A574A;
+
+}
